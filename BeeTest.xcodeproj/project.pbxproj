@@ -11,11 +11,16 @@
 		4C4453802BDED5D700533E9C /* EquipmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44537F2BDED5D700533E9C /* EquipmentListView.swift */; };
 		4C4453822BDED5D900533E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4453812BDED5D900533E9C /* Assets.xcassets */; };
 		4C4453852BDED5D900533E9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4453842BDED5D900533E9C /* Preview Assets.xcassets */; };
-		4C44538F2BDED5D900533E9C /* BeeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44538E2BDED5D900533E9C /* BeeTestTests.swift */; };
+		4C44538F2BDED5D900533E9C /* BeeTestModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44538E2BDED5D900533E9C /* BeeTestModelTests.swift */; };
 		4C4453992BDED5D900533E9C /* BeeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4453982BDED5D900533E9C /* BeeTestUITests.swift */; };
 		4C44539B2BDED5D900533E9C /* BeeTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44539A2BDED5D900533E9C /* BeeTestUITestsLaunchTests.swift */; };
 		4C4453A82BDED86200533E9C /* Equipments.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C4453A72BDED86200533E9C /* Equipments.json */; };
 		4C4453AA2BDEDB6B00533E9C /* EquipmentDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4453A92BDEDB6B00533E9C /* EquipmentDatasource.swift */; };
+		BBD338192C19A90600B2C34F /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD338182C19A90600B2C34F /* Equipment.swift */; };
+		BBD338292C19AAA200B2C34F /* EquipmentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD338282C19AAA200B2C34F /* EquipmentListViewModel.swift */; };
+		BBD3382E2C19AB8200B2C34F /* EquipmentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3382D2C19AB8200B2C34F /* EquipmentDetailViewModel.swift */; };
+		BBD338302C19ABA700B2C34F /* EquipmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3382F2C19ABA700B2C34F /* EquipmentDetailView.swift */; };
+		BBD338322C19B1A100B2C34F /* BeeTestViewModelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD338312C19B1A100B2C34F /* BeeTestViewModelsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +47,18 @@
 		4C4453812BDED5D900533E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C4453842BDED5D900533E9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4C44538A2BDED5D900533E9C /* BeeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C44538E2BDED5D900533E9C /* BeeTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeTestTests.swift; sourceTree = "<group>"; };
+		4C44538E2BDED5D900533E9C /* BeeTestModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeTestModelTests.swift; sourceTree = "<group>"; };
 		4C4453942BDED5D900533E9C /* BeeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4453982BDED5D900533E9C /* BeeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeTestUITests.swift; sourceTree = "<group>"; };
 		4C44539A2BDED5D900533E9C /* BeeTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4C4453A72BDED86200533E9C /* Equipments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Equipments.json; sourceTree = "<group>"; };
 		4C4453A92BDEDB6B00533E9C /* EquipmentDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDatasource.swift; sourceTree = "<group>"; };
 		4C4453AB2BDEDFB100533E9C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BBD338182C19A90600B2C34F /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		BBD338282C19AAA200B2C34F /* EquipmentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentListViewModel.swift; sourceTree = "<group>"; };
+		BBD3382D2C19AB8200B2C34F /* EquipmentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDetailViewModel.swift; sourceTree = "<group>"; };
+		BBD3382F2C19ABA700B2C34F /* EquipmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDetailView.swift; sourceTree = "<group>"; };
+		BBD338312C19B1A100B2C34F /* BeeTestViewModelsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeTestViewModelsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +109,10 @@
 		4C44537C2BDED5D700533E9C /* BeeTest */ = {
 			isa = PBXGroup;
 			children = (
-				4C44537D2BDED5D700533E9C /* BeeTestApp.swift */,
-				4C44537F2BDED5D700533E9C /* EquipmentListView.swift */,
-				4C4453812BDED5D900533E9C /* Assets.xcassets */,
-				4C4453832BDED5D900533E9C /* Preview Content */,
-				4C4453A72BDED86200533E9C /* Equipments.json */,
-				4C4453A92BDEDB6B00533E9C /* EquipmentDatasource.swift */,
+				BBD3381D2C19A96B00B2C34F /* Core */,
+				BBD3381E2C19A9A900B2C34F /* EquipmentList */,
+				BBD3382A2C19AAAA00B2C34F /* EquipmentDetail */,
+				BBD338242C19AA5F00B2C34F /* Shared */,
 				4C4453AB2BDEDFB100533E9C /* README.md */,
 			);
 			path = BeeTest;
@@ -121,7 +129,8 @@
 		4C44538D2BDED5D900533E9C /* BeeTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				4C44538E2BDED5D900533E9C /* BeeTestTests.swift */,
+				4C44538E2BDED5D900533E9C /* BeeTestModelTests.swift */,
+				BBD338312C19B1A100B2C34F /* BeeTestViewModelsTest.swift */,
 			);
 			path = BeeTestTests;
 			sourceTree = "<group>";
@@ -133,6 +142,84 @@
 				4C44539A2BDED5D900533E9C /* BeeTestUITestsLaunchTests.swift */,
 			);
 			path = BeeTestUITests;
+			sourceTree = "<group>";
+		};
+		BBD3381D2C19A96B00B2C34F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4C44537D2BDED5D700533E9C /* BeeTestApp.swift */,
+				4C4453812BDED5D900533E9C /* Assets.xcassets */,
+				4C4453832BDED5D900533E9C /* Preview Content */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BBD3381E2C19A9A900B2C34F /* EquipmentList */ = {
+			isa = PBXGroup;
+			children = (
+				BBD338272C19AA8F00B2C34F /* ViewModels */,
+				BBD338262C19AA8700B2C34F /* Views */,
+			);
+			path = EquipmentList;
+			sourceTree = "<group>";
+		};
+		BBD338242C19AA5F00B2C34F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BBD338252C19AA6600B2C34F /* Model */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BBD338252C19AA6600B2C34F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C4453A72BDED86200533E9C /* Equipments.json */,
+				BBD338182C19A90600B2C34F /* Equipment.swift */,
+				4C4453A92BDEDB6B00533E9C /* EquipmentDatasource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBD338262C19AA8700B2C34F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C44537F2BDED5D700533E9C /* EquipmentListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BBD338272C19AA8F00B2C34F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BBD338282C19AAA200B2C34F /* EquipmentListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BBD3382A2C19AAAA00B2C34F /* EquipmentDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BBD3382C2C19AABB00B2C34F /* ViewModels */,
+				BBD3382B2C19AAB600B2C34F /* Views */,
+			);
+			path = EquipmentDetail;
+			sourceTree = "<group>";
+		};
+		BBD3382B2C19AAB600B2C34F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBD3382F2C19ABA700B2C34F /* EquipmentDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BBD3382C2C19AABB00B2C34F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BBD3382D2C19AB8200B2C34F /* EquipmentDetailViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +236,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				BBD338172C19A8A600B2C34F /* PBXTargetDependency */,
 			);
 			name = BeeTest;
+			packageProductDependencies = (
+			);
 			productName = BeeTest;
 			productReference = 4C44537A2BDED5D700533E9C /* BeeTest.app */;
 			productType = "com.apple.product-type.application";
@@ -216,13 +306,17 @@
 			};
 			buildConfigurationList = 4C4453752BDED5D700533E9C /* Build configuration list for PBXProject "BeeTest" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = fr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 4C4453712BDED5D700533E9C;
+			packageReferences = (
+				BBD338152C19A89300B2C34F /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 4C44537B2BDED5D700533E9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,9 +360,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD3382E2C19AB8200B2C34F /* EquipmentDetailViewModel.swift in Sources */,
 				4C4453802BDED5D700533E9C /* EquipmentListView.swift in Sources */,
 				4C44537E2BDED5D700533E9C /* BeeTestApp.swift in Sources */,
+				BBD338292C19AAA200B2C34F /* EquipmentListViewModel.swift in Sources */,
+				BBD338192C19A90600B2C34F /* Equipment.swift in Sources */,
 				4C4453AA2BDEDB6B00533E9C /* EquipmentDatasource.swift in Sources */,
+				BBD338302C19ABA700B2C34F /* EquipmentDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C44538F2BDED5D900533E9C /* BeeTestTests.swift in Sources */,
+				4C44538F2BDED5D900533E9C /* BeeTestModelTests.swift in Sources */,
+				BBD338322C19B1A100B2C34F /* BeeTestViewModelsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +400,10 @@
 			isa = PBXTargetDependency;
 			target = 4C4453792BDED5D700533E9C /* BeeTest */;
 			targetProxy = 4C4453952BDED5D900533E9C /* PBXContainerItemProxy */;
+		};
+		BBD338172C19A8A600B2C34F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BBD338162C19A8A600B2C34F /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -357,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -414,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -431,8 +534,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BeeTest/Preview Content\"";
-				DEVELOPMENT_TEAM = 45T57B8H53;
+				DEVELOPMENT_ASSET_PATHS = "\"BeeTest/Core/Preview Content\"";
+				DEVELOPMENT_TEAM = RT62BPUMZ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -440,6 +543,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,8 +564,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BeeTest/Preview Content\"";
-				DEVELOPMENT_TEAM = 45T57B8H53;
+				DEVELOPMENT_ASSET_PATHS = "\"BeeTest/Core/Preview Content\"";
+				DEVELOPMENT_TEAM = RT62BPUMZ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -469,6 +573,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,6 +703,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBD338152C19A89300B2C34F /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBD338162C19A8A600B2C34F /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBD338152C19A89300B2C34F /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C4453722BDED5D700533E9C /* Project object */;
 }
