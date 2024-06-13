@@ -4,55 +4,36 @@ import XCTest
 
 final class BeeTestUITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        continueAfterFailure = false
-        let app = XCUIApplication()
-        app.launch()
-    }
+    private var app: XCUIApplication!
 
-    func testEquipmentListView() throws {
-        let app = XCUIApplication()
-        
-        sleep(5)
-        
-        let equipmentList = app.tables["equipmentList"]
-        let exists = NSPredicate(format: "exists == true")
-        expectation(for: exists, evaluatedWith: equipmentList, handler: nil)
-        
-        let result = XCTWaiter.wait(for: [expectation(description: "Wait for equipmentList to appear")], timeout: 10)
-        if result == .completed {
-            XCTAssertTrue(equipmentList.cells.count > 0)
-            XCTAssertTrue(app.staticTexts["equipment_0001"].exists)
-        } else {
-            XCTFail("Failed to find equipmentList in time")
-        }
-    }
+      override func setUpWithError() throws {
+          continueAfterFailure = false
+          app = XCUIApplication()
+          app.launchArguments = ["-UITest"]
+          app.launch()
+      }
 
-    func testEquipmentDetailView() throws {
-        let app = XCUIApplication()
-        
-        sleep(5)
-        
-        let equipmentList = app.tables["equipmentList"]
-        let exists = NSPredicate(format: "exists == true")
-        expectation(for: exists, evaluatedWith: equipmentList, handler: nil)
-        
-        let result = XCTWaiter.wait(for: [expectation(description: "Wait for equipmentList to appear")], timeout: 10)
-        if result == .completed {
-            let firstCell = equipmentList.cells.element(boundBy: 0)
-            firstCell.tap()
-            
-            let detailsView = app.otherElements["equipmentDetail"]
-            expectation(for: exists, evaluatedWith: detailsView, handler: nil)
-            let detailsResult = XCTWaiter.wait(for: [expectation(description: "Wait for equipmentDetail to appear")], timeout: 10)
-            if detailsResult == .completed {
-                XCTAssertTrue(app.staticTexts["equipmentName"].exists)
-                XCTAssertTrue(app.staticTexts["equipmentType"].exists)
-            } else {
-                XCTFail("Failed to find equipmentDetail in time")
-            }
-        } else {
-            XCTFail("Failed to find equipmentList in time")
-        }
-    }
-}
+      func testEquipmentDetailView() throws {
+          XCTAssertTrue(app.collectionViews["equipmentList"].exists)
+          
+          let firstEquipmentCell = app.collectionViews["equipmentList"].children(matching: .cell).element(boundBy: 0)
+          
+          XCTAssertTrue(firstEquipmentCell.exists)
+          
+          // Tape sur le premier équipement pour voir les détails
+          firstEquipmentCell.children(matching: .other).element(boundBy: 1).children(matching: .other).element.tap()
+          
+          XCTAssertTrue(app.collectionViews["equipmentDetail"].exists)
+
+          // Vérifie que les détails de l'équipement sont affichés correctement
+          let equipmentName = app.staticTexts["equipmentName"]
+          let equipmentType = app.staticTexts["equipmentType"]
+          
+          XCTAssertTrue(equipmentName.exists)
+          XCTAssertTrue(equipmentType.exists)
+          
+          // Vérifie les valeurs spécifiques des données simulées
+          XCTAssertEqual(equipmentName.label, "Test Equipment 1")
+          XCTAssertEqual(equipmentType.label, "Test Type 1")
+      }
+  }
