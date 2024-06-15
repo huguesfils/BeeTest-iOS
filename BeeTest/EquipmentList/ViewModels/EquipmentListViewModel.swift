@@ -11,6 +11,11 @@ class EquipmentListViewModel: ObservableObject {
     @Published var equipments: [Equipment] = []
     
     init() {
-        self.equipments = EquipmentDatasource.getEquipmentsData()
+        sortEquipmentsAlphabetically()
+    }
+    
+    private func sortEquipmentsAlphabetically() {
+        equipments = EquipmentDatasource.getEquipmentsData()
+        equipments.sort { $0.name < $1.name }
     }
 }
