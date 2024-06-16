@@ -17,10 +17,11 @@ final class BeeTestViewModelsTest: XCTestCase {
         }
     
     func testEquipmentDetailViewModel() {
-            let equipment = Equipment(id: "0001", name: "Chauffe-eau RDC", type: "Chauffe-eau")
+        let equipment = Equipment(id: "0001", name: "Chauffe-eau RDC", type: "Chauffe-eau", icon: "🔥")
             let viewModel = EquipmentDetailViewModel(equipment: equipment)
             XCTAssertEqual(viewModel.equipment.id, "0001")
             XCTAssertEqual(viewModel.equipment.name, "Chauffe-eau RDC")
             XCTAssertEqual(viewModel.equipment.type, "Chauffe-eau")
+            XCTAssertEqual(viewModel.equipment.icon, "🔥")
         }
 }

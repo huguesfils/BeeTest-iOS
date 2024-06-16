@@ -11,7 +11,8 @@ final class BeeTestModelTests: XCTestCase {
                {
                    "id": "0001",
                    "name": "Chauffe-eau RDC",
-                   "type": "Chauffe-eau"
+                   "type": "Chauffe-eau",
+           "icon": "🔥"
                }
            ]
            """.data(using: .utf8)!
@@ -23,6 +24,7 @@ final class BeeTestModelTests: XCTestCase {
             XCTAssertEqual(equipments.first?.id, "0001")
             XCTAssertEqual(equipments.first?.name, "Chauffe-eau RDC")
             XCTAssertEqual(equipments.first?.type, "Chauffe-eau")
+            XCTAssertEqual(equipments.first?.icon, "🔥")
         } catch {
             XCTFail("Decoding failed: \(error)")
         }

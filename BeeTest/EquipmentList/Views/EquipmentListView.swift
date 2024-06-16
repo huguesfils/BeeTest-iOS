@@ -10,9 +10,13 @@ struct EquipmentListView: View {
             List(viewModel.equipments) { equipment in
                 NavigationLink(destination: EquipmentDetailView(
                     viewModel: EquipmentDetailViewModel(equipment: equipment))) {
-                    Text(equipment.name)
-                        .font(.headline)
-                        .accessibilityIdentifier("equipment_\(equipment.id)")
+                        HStack {
+                            Text(equipment.icon)
+                            Text(equipment.name)
+                                    .font(.title3)
+                                .accessibilityIdentifier("equipment_\(equipment.id)")
+                        }
+                   
                 }
             }
             .navigationTitle("Equipements")

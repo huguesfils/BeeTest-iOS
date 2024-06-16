@@ -35,5 +35,5 @@ struct EquipmentDetailView: View {
 
 #Preview {
     EquipmentDetailView(viewModel: EquipmentDetailViewModel(
-        equipment: Equipment(id: "0001", name: "Chauffe-eau RDC", type: "Chauffe-eau")))
+        equipment: Equipment(id: "0001", name: "Chauffe-eau RDC", type: "Chauffe-eau", icon: "🚀")))
 }
