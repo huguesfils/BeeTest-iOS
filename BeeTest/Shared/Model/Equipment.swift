@@ -11,5 +11,5 @@ struct Equipment: Decodable, Identifiable {
     let id: String
     let name: String
     let type: String
-    let icon: String
+    let icon: String?
 }

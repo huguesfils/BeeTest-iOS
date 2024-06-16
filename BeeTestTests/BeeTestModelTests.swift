@@ -12,7 +12,7 @@ final class BeeTestModelTests: XCTestCase {
                    "id": "0001",
                    "name": "Chauffe-eau RDC",
                    "type": "Chauffe-eau",
-           "icon": "🔥"
+                   "icon": "🔥"
                }
            ]
            """.data(using: .utf8)!

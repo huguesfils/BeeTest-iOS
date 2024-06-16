@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EquipmentDetailView: View {
     @ObservedObject var viewModel: EquipmentDetailViewModel
-
+    
     var body: some View {
         List {
             Section {
@@ -35,5 +35,5 @@ struct EquipmentDetailView: View {
 
 #Preview {
     EquipmentDetailView(viewModel: EquipmentDetailViewModel(
-        equipment: Equipment(id: "0001", name: "Chauffe-eau RDC", type: "Chauffe-eau", icon: "🚀")))
+        equipment: Equipment(id: "1", name: "Chauffe-eau RDC", type: "Chauffe-eau", icon: "")))
 }

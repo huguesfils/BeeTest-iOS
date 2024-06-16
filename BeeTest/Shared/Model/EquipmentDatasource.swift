@@ -8,8 +8,12 @@ class EquipmentDatasource {
     static func getEquipmentsData() -> [Equipment] {
         if useMockData {
             return [
-                Equipment(id: "1", name: "Test Equipment 1", type: "Test Type 1", icon: "🚀"),
-                Equipment(id: "2", name: "Test Equipment 2", type: "Test Type 2", icon: "🚀")
+                Equipment(id: "1", name: "Test Equipment 1", type: "Test Type 1"
+                          , icon: "🚀"
+                         ),
+                Equipment(id: "2", name: "Test Equipment 2", type: "Test Type 2"
+                          , icon: "🚀"
+                         )
             ]
         } else {
             guard let path = Bundle.main.url(forResource: "Equipments", withExtension: "json") else {
